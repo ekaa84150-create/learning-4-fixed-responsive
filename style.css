@@ -24,10 +24,6 @@ body.dark-mode section {
     color: white;
 }
 
-body. dark-mode nav a {
-    color: white;
-}
-
 
 h1,h2,h3 {
     font-weight: 600;
@@ -338,7 +334,6 @@ html {
     .profile {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
     }
 }
 
