@@ -17,11 +17,21 @@ window.addEventListener("scroll", () => {
     nav.classList.toggle("scroll", window.scrollY > 10);
 });
 
-const toggleBtn = document.getElementById("dark-mode-toggle")
-toggleBtn.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
+const toggleBtn = document.getElementById("dark-mode-toggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
 });
 
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+}
 const elements = document.querySelectorAll(".hidden");
 
 const observer = new IntersectionObserver((entries) => {
