@@ -12,6 +12,7 @@ This is my personal website project while learning web development.
 ## Logs Fix Bug
 - Fix dark mode bug
 - Fix double Selector In CSS
+- Fix toggle dark button
 
 ## Technologies
 
