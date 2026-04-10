@@ -8,6 +8,10 @@ This is my personal website project while learning web development.
 - Dark mode toggle
 - Mobile navigation menu
 
+## Logs Fix Bug
+- Fix dark mode bug
+
+
 ## Technologies
 
 - HTML
