@@ -99,7 +99,7 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 1)
 }
 
-.profile {
+#profile {
     min-height: 75vh;
     display: flex;
     gap: 20px;
@@ -108,11 +108,11 @@ section {
     transition: all 0.3s ease;
 }
 
-.profile:hover {
+#profile:hover {
     transform: translateY(-5px);
 }
 
-.profile img {
+#profile img {
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -120,7 +120,7 @@ section {
     display: block;
 }
 
-.skills {
+#skills {
     text-align: center;
     max-width: 1000px;
     padding: 20px;
@@ -130,7 +130,7 @@ section {
     transition: all 0.3s ease;
 }
 
-.skills:hover {
+#skills:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -250,14 +250,6 @@ section {
     transform: scale(1.1) translateY(-5px)
 }
 
-.project-item img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
 .project-item:hover img {
     transform: translateY(-5px);
 }
@@ -270,7 +262,7 @@ section {
     text-align: center;
 }
 
-.article {
+#article {
     text-align: center;
     margin-top: 40px;
     gap: 20px;
@@ -278,16 +270,16 @@ section {
     transition: all 0.3s ease;
 }
 
-.article:hover {
+#article:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
 }
 
-.article h2 {
+#article h2 {
     font-weight: bold;
 }
 
-.contact {
+#contact {
     margin-top: 40px;
     text-align: center;
 }
@@ -320,6 +312,17 @@ section {
 .contact-box:hover {
     transform: translateY(-5px);
      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 html {

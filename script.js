@@ -22,11 +22,14 @@ toggleBtn.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 });
 
-const skills = document.querySelectorAll('.skill-progress');
+const elements = document.querySelectorAll(".hidden");
 
-function animateSkills() {
-  skills.forEach(skill => {
-    const progress = skill.getAttribute('data-progress');
-    skill.style.width = progress;
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
   });
-}
+});
+
+elements.forEach((el) => observer.observe(el));

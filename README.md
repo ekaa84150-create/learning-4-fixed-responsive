@@ -7,10 +7,11 @@ This is my personal website project while learning web development.
 - Responsive layout
 - Dark mode toggle
 - Mobile navigation menu
+- Add fade in
 
 ## Logs Fix Bug
 - Fix dark mode bug
-
+- Fix double Selector In CSS
 
 ## Technologies
 
