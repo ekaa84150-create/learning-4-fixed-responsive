@@ -21,3 +21,12 @@ const toggleBtn = document.getElementById("dark-mode-toggle")
 toggleBtn.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 });
+
+const skills = document.querySelectorAll('.skill-progress');
+
+function animateSkills() {
+  skills.forEach(skill => {
+    const progress = skill.getAttribute('data-progress');
+    skill.style.width = progress;
+  });
+}
